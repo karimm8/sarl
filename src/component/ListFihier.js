@@ -1,0 +1,42 @@
+import './connect.css'
+import React from 'react';
+import { MdDelete } from "react-icons/md";
+import { HiMiniPencilSquare } from "react-icons/hi2";
+import { FaSearch } from "react-icons/fa";
+export default function ListFihier() {
+  return (
+    <div className='wrapper' style={{width:"100%"}}>
+        <table id='customers'>
+        <caption style={{fontSize:"32px",fontWeight:"bold",marginBottom:"30px"}}>List du Fichier</caption>
+        <tr>
+            <th>operation</th>
+            <th>situation</th>
+            <th>programme</th>
+            <th>lot</th>
+            <th>caution provisoir</th>
+            <th>montant estimatif</th>
+            <th>code operation</th>
+            <th>superficie</th>
+            <th>imputation</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Anom</td>
+            <td>19</td>
+            <td>Male</td>
+            <td>Megha</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>Subham</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>
+                <MdDelete style={{cursor:"pointer"}} />
+                <HiMiniPencilSquare style={{cursor:"pointer",margin:"0px 5px"}} />
+                <FaSearch style={{cursor:"pointer"}} />
+            </td>
+        </tr>
+    </table>
+    </div>
+  )
+}

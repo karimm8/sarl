@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 export default function CreerFihier() {
   return (
     <div className='wrapper' style={{width:"800px"}}>
@@ -104,8 +105,11 @@ export default function CreerFihier() {
               <textarea rows={15} cols={40}></textarea>
              </fieldset>
              <button type='submit'>
-                 Creer
+                  Creer
              </button>
+             <Link to='/ListFichier' className='link'>Afficher</Link>
+                 <Link to='/'style={{color:"white",textAlign:'right',position:'fixed', bottom:"5%",right:"10%",backgroundColor:"violet",padding:"5px"}} >LogOut</Link>
+           
           </form>
     </div>
   )
