@@ -3,6 +3,7 @@ import React from 'react';
 import { MdDelete } from "react-icons/md";
 import { HiMiniPencilSquare } from "react-icons/hi2";
 import { FaSearch } from "react-icons/fa";
+import {Link} from 'react-router-dom';
 export default function ListFihier() {
   return (
     <div className='wrapper' style={{width:"100%"}}>
@@ -37,6 +38,7 @@ export default function ListFihier() {
             </td>
         </tr>
     </table>
+    <Link to='/'style={{color:"white",textAlign:'right',position:'fixed', bottom:"5%",right:"10%",backgroundColor:"violet",padding:"5px"}} >LogOut</Link>
     </div>
   )
 }

@@ -13,11 +13,14 @@ export default function Connecte() {
                          navigate("/creerFichier");
                     }
                     if(user === "dm" || password === "111222"){
-                         navigate("/validateFichier")
+                         navigate("/valideFichier")
                     }
                     if(user === "dti" || password === "222111"){
                          navigate("/numSerie")
-                    }     
+                    }  
+                    if(user !== "chef" || user !== "dm" || user !== "dti" || password !== "111222" || password !== "222111" || password !== "123456"){
+                         navigate("/error")
+                    }
                  }
                     else {
                          alert("incorrect");
