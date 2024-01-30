@@ -3,7 +3,7 @@ import { GrValidate } from "react-icons/gr";
 import {Link} from 'react-router-dom';
 export default function ValideFihier() {
   return (
-    <div className='wrapper' style={{width:"100%"}}>
+    <div className='wrapper' style={{width:"100%",overflowX:"auto"}}>
               <table id='customers'>
         <caption style={{fontSize:"32px",fontWeight:"bold",marginBottom:"30px"}}>Validate du Fichier</caption>
         <tr>

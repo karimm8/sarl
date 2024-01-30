@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import {Link} from 'react-router-dom';
 export default function ListFihier() {
   return (
-    <div className='wrapper' style={{width:"100%"}}>
+    <div className='wrapper' style={{width:"100%",overflowX:"auto"}}>
         <table id='customers'>
         <caption style={{fontSize:"32px",fontWeight:"bold",marginBottom:"30px"}}>List du Fichier</caption>
         <tr>
