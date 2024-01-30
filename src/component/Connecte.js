@@ -8,13 +8,13 @@ export default function Connecte() {
     const [password,setpassword] = useState("");
     const verifierLogin = (e) => {
                e.preventDefault();
-                    if(user === "chef" || password === "123456"){
+                    if(user === "chef" && password === "123456"){
                          navigate("/creerFichier");
                     }
-                    else if(user === "dm" || password === "111222"){
+                    else if(user === "dm" && password === "111222"){
                          navigate("/valideFichier")
                     }
-                    else if(user === "dti" || password === "222111"){
+                    else if(user === "dti" && password === "222111"){
                          navigate("/numSerie")
                     }  
                  else {
